@@ -1,0 +1,39 @@
+.w3rcontainer{
+    border: 1px solid #cccfdb;
+    border-radius: 2px;
+ } 
+ .hover-underline-animation {
+   display: inline-block;
+   position: relative;
+   color: white;
+ }
+ 
+ .hover-underline-animation:after {
+   content: '';
+   position: absolute;
+   width: 100%;
+   transform: scaleX(0);
+   height: 2px;
+   bottom: 0;
+   left: 0;
+   background-color: rgb(241, 234, 234);
+   transform-origin: bottom right;
+   transition: transform 0.25s ease-out;
+ }
+ 
+ .hover-underline-animation:hover:after {
+   transform: scaleX(1);
+   transform-origin: bottom left;
+ }
+ .moreText:hover{
+    color: #cccfdb;
+ }
+ .sBorder{
+    border: 10px solid rgb(126, 39, 39);
+    
+ }
+
+ .SPI:hover {
+    -webkit-filter: blur(2px); /* Chrome, Safari, Opera */
+    filter: blur(2px);
+}
